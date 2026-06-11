@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission Nutrition | Logo</title>
+  <link rel="icon" type="image/png" href="Eat (1).png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="Eat (1).png" alt="Mission Nutrition logo">
+      <span><strong>Mission Nutrition</strong><small>Fuel up for the mission</small></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="challenge.html">Challenge</a>
+      <a href="ad-tricks.html">Ad Tricks</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="label-check.html">Label Check</a>
+      <a href="food-guide.html">Food Guide</a>
+      <a href="tracker.html">Tracker</a>
+      <a class="is-active" href="missions.html">My Mission</a>
+      <a href="worksheet.html">Worksheets</a>
+      <a href="ideas.html">Ideas</a>
+    </nav>
+  </header>
+  <main class="section">
+    <div class="intro">
+      <p class="kicker">Mission logo</p>
+      <h1>Choose your pilot logo.</h1>
+      <p>Pick the icon and name that show in the top bar.</p>
+    </div>
+    <section class="mission-profile" id="mission-profile" aria-label="Mission profile">
+      <div>
+        <p class="kicker">Pilot profile</p>
+        <h2>Customize your space logo.</h2>
+        <p>Your icon shows in the top bar. Hover over it to see your name.</p>
+      </div>
+      <form class="profile-form" id="profile-form">
+        <label class="profile-name-label" for="profile-name">Your name
+          <input id="profile-name" type="text" maxlength="24" placeholder="Mission pilot">
+        </label>
+        <div class="logo-picker" id="logo-picker" aria-label="Choose a space logo">
+          <button type="button" data-logo="&#128640;">&#128640;</button>
+          <button type="button" data-logo="&#129680;">&#129680;</button>
+          <button type="button" data-logo="&#127775;">&#127775;</button>
+          <button type="button" data-logo="&#127769;">&#127769;</button>
+          <button type="button" data-logo="&#9732;">&#9732;</button>
+          <button type="button" data-logo="&#128125;">&#128125;</button>
+          <button type="button" data-logo="&#127757;">&#127757;</button>
+          <button type="button" data-logo="&#127756;">&#127756;</button>
+          <button type="button" data-logo="&#11088;">&#11088;</button>
+          <button type="button" data-logo="&#10024;">&#10024;</button>
+          <button type="button" data-logo="&#128300;">&#128300;</button>
+          <button type="button" data-logo="&#128760;">&#128760;</button>
+        </div>
+        <p class="profile-preview">Top bar preview: <span id="profile-preview-icon">&#128640;</span> <strong id="profile-preview-name">Mission pilot</strong></p>
+      </form>
+    </section>
+    <div class="actions">
+      <a class="button button--secondary" href="missions.html">Full Mission Page</a>
+      <a class="button button--primary" href="mission-badges.html">Next: Badges</a>
+    </div>
+  </main>
+  <footer class="footer"><p>Before you buy it, question it.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

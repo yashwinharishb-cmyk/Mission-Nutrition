@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission Nutrition | My Mission</title>
+  <link rel="icon" type="image/png" href="Eat (1).png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="Eat (1).png" alt="Mission Nutrition logo">
+      <span><strong>Mission Nutrition</strong><small>Fuel up for the mission</small></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="challenge.html">Challenge</a>
+      <a href="ad-tricks.html">Ad Tricks</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="label-check.html">Label Check</a>
+      <a href="food-guide.html">Food Guide</a>
+      <a href="tracker.html">Tracker</a>
+      <a class="is-active" href="missions.html">My Mission</a>
+      <a href="worksheet.html">Worksheets</a>
+      <a href="ideas.html">Ideas</a>
+    </nav>
+  </header>
+  <main class="section missions-page">
+    <div class="intro">
+      <p class="kicker">My Mission</p>
+      <h1>Launch your nutrition rocket.</h1>
+      <p>Do well in the quiz and tracker to travel across the solar system from Earth to Pluto.</p>
+    </div>
+
+    <section class="mission-profile" id="mission-profile" aria-label="Mission profile">
+      <div>
+        <p class="kicker">Pilot profile</p>
+        <h2>Choose your space logo.</h2>
+        <p>Your icon shows in the top bar. Hover over it to see your name, and click it anytime to come back here.</p>
+      </div>
+      <form class="profile-form" id="profile-form">
+        <label class="profile-name-label" for="profile-name">Your name
+          <input id="profile-name" type="text" maxlength="24" placeholder="Mission pilot">
+        </label>
+        <div class="logo-picker" id="logo-picker" aria-label="Choose a space logo">
+          <button type="button" data-logo="🚀">🚀</button>
+          <button type="button" data-logo="🪐">🪐</button>
+          <button type="button" data-logo="🌟">🌟</button>
+          <button type="button" data-logo="🌙">🌙</button>
+          <button type="button" data-logo="☄️">☄️</button>
+          <button type="button" data-logo="🛰️">🛰️</button>
+          <button type="button" data-logo="👽">👽</button>
+          <button type="button" data-logo="🌌">🌌</button>
+          <button type="button" data-logo="🌍">🌍</button>
+          <button type="button" data-logo="🌎">🌎</button>
+          <button type="button" data-logo="🌏">🌏</button>
+          <button type="button" data-logo="☀️">☀️</button>
+          <button type="button" data-logo="⭐">⭐</button>
+          <button type="button" data-logo="💫">💫</button>
+          <button type="button" data-logo="✨">✨</button>
+          <button type="button" data-logo="🌠">🌠</button>
+          <button type="button" data-logo="🌕">🌕</button>
+          <button type="button" data-logo="🌖">🌖</button>
+          <button type="button" data-logo="🌗">🌗</button>
+          <button type="button" data-logo="🌘">🌘</button>
+          <button type="button" data-logo="🌑">🌑</button>
+          <button type="button" data-logo="🌒">🌒</button>
+          <button type="button" data-logo="🌓">🌓</button>
+          <button type="button" data-logo="🌔">🌔</button>
+          <button type="button" data-logo="🌜">🌜</button>
+          <button type="button" data-logo="🌛">🌛</button>
+          <button type="button" data-logo="🌞">🌞</button>
+          <button type="button" data-logo="🔭">🔭</button>
+          <button type="button" data-logo="🧑‍🚀">🧑‍🚀</button>
+          <button type="button" data-logo="👨‍🚀">👨‍🚀</button>
+          <button type="button" data-logo="👩‍🚀">👩‍🚀</button>
+          <button type="button" data-logo="🛸">🛸</button>
+          <button type="button" data-logo="🌃">🌃</button>
+        </div>
+        <p class="profile-preview">Top bar preview: <span id="profile-preview-icon">🚀</span> <strong id="profile-preview-name">Mission pilot</strong></p>
+      </form>
+    </section>
+
+    <section class="mission-control" id="mission-planets" aria-label="Mission progress">
+      <div class="mission-status">
+        <p class="kicker">Current destination</p>
+        <h2 id="mission-level">Earth Launchpad</h2>
+        <p id="mission-summary">Start your quiz and tracker to fuel the rocket.</p>
+        <div class="mission-meter"><span id="mission-meter-fill"></span></div>
+        <p class="mission-score" id="mission-score">0% mission fuel</p>
+        <button class="button button--reset" id="reset-missions" type="button">Reset mission</button>
+      </div>
+
+      <div class="space-map">
+        <div class="rocket-lane">
+          <img class="mission-rocket" id="mission-rocket" src="https://commons.wikimedia.org/wiki/Special:FilePath/Cartoon%20space%20rocket.png" alt="Cartoon rocket from Wikimedia Commons">
+        </div>
+        <div class="planet-row">
+          <article class="planet-stop planet-stop--earth is-active"><span>Earth</span><img src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Earth%20seen%20from%20Apollo%2017.jpg?width=300" alt="Earth"></article>
+          <article class="planet-stop planet-stop--mercury"><span>Mercury</span><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercury%20in%20true%20color.jpg?width=300" alt="Mercury"></article>
+          <article class="planet-stop planet-stop--venus"><span>Venus</span><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Venus%20from%20Mariner%2010.jpg?width=300" alt="Venus"></article>
+          <article class="planet-stop planet-stop--mars"><span>Mars</span><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mars%20transparent.png?width=300" alt="Mars"></article>
+          <article class="planet-stop planet-stop--jupiter"><span>Jupiter</span><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jupiter%20%28transparent%29.png?width=300" alt="Jupiter"></article>
+          <article class="planet-stop planet-stop--saturn"><span>Saturn</span><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Saturn%20during%20Equinox.jpg?width=300" alt="Saturn"></article>
+          <article class="planet-stop planet-stop--uranus"><span>Uranus</span><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Uranus2.jpg?width=300" alt="Uranus"></article>
+          <article class="planet-stop planet-stop--neptune"><span>Neptune</span><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Transparent%20Neptune.png?width=300" alt="Neptune"></article>
+          <article class="planet-stop planet-stop--pluto"><span>Pluto</span><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pluto%20in%20True%20Color%20-%20High-Res.jpg?width=300" alt="Pluto"></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid two mission-grid">
+      <article class="card">
+        <span class="number">1</span>
+        <h3>Quiz fuel</h3>
+        <p id="mission-quiz">Quiz progress will show here after you answer the questions.</p>
+        <a class="text-link" href="quiz.html">Go to quiz</a>
+      </article>
+      <article class="card">
+        <span class="number">2</span>
+        <h3>Tracker fuel</h3>
+        <p id="mission-tracker">Tracker progress will show here after you check food groups.</p>
+        <a class="text-link" href="tracker.html">Go to tracker</a>
+      </article>
+    </section>
+
+    <section class="mission-badges" id="mission-badges-section" aria-label="Mission badges">
+      <div>
+        <p class="kicker">Achievements</p>
+        <h2>Mission badges</h2>
+        <p>Unlock badges by answering quiz questions and checking food groups in the tracker.</p>
+      </div>
+      <div class="badge-grid" id="mission-badges">
+        <article class="badge-card is-locked">
+          <span>01</span>
+          <strong>First Launch</strong>
+          <small>Start the quiz or tracker.</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="callout recommendations" id="mission-recommendations-section">
+      <p class="kicker">Recommendations and to do</p>
+      <h2>To do next to level up</h2>
+      <ul id="mission-recommendations">
+        <li>To do: answer more quiz questions to build mission fuel.</li>
+        <li>To do: check off food groups in the tracker after a snack or meal.</li>
+      </ul>
+    </section>
+
+    <p class="image-credit">Rocket and planet images are loaded from Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:Cartoon_space_rocket.png">rocket</a>, <a href="https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg">Earth</a>, <a href="https://commons.wikimedia.org/wiki/File:Mercury_in_true_color.jpg">Mercury</a>, <a href="https://commons.wikimedia.org/wiki/File:Venus_from_Mariner_10.jpg">Venus</a>, <a href="https://commons.wikimedia.org/wiki/File:Mars_transparent.png">Mars</a>, <a href="https://commons.wikimedia.org/wiki/File:Jupiter_(transparent).png">Jupiter</a>, <a href="https://commons.wikimedia.org/wiki/File:Saturn_during_Equinox.jpg">Saturn</a>, <a href="https://commons.wikimedia.org/wiki/File:Uranus2.jpg">Uranus</a>, <a href="https://commons.wikimedia.org/wiki/File:Transparent_Neptune.png">Neptune</a>, and <a href="https://commons.wikimedia.org/wiki/File:Pluto_in_True_Color_-_High-Res.jpg">Pluto</a>.</p>
+    <div class="actions">
+      <a class="button button--secondary" href="tracker.html">Back</a>
+      <a class="button button--primary" href="ideas.html">Next: Ideas</a>
+    </div>
+  </main>
+  <footer class="footer"><p>Before you buy it, question it.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

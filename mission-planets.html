@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission Nutrition | Planets</title>
+  <link rel="icon" type="image/png" href="Eat (1).png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img class="brand__logo" src="Eat (1).png" alt="Mission Nutrition logo">
+      <span><strong>Mission Nutrition</strong><small>Fuel up for the mission</small></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="challenge.html">Challenge</a>
+      <a href="ad-tricks.html">Ad Tricks</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="label-check.html">Label Check</a>
+      <a href="food-guide.html">Food Guide</a>
+      <a href="tracker.html">Tracker</a>
+      <a class="is-active" href="missions.html">My Mission</a>
+      <a href="worksheet.html">Worksheets</a>
+      <a href="ideas.html">Ideas</a>
+    </nav>
+  </header>
+  <main class="section missions-page">
+    <div class="intro">
+      <p class="kicker">Mission planets</p>
+      <h1>Track your space map.</h1>
+      <p>Your quiz and tracker progress move the rocket across the planets.</p>
+    </div>
+    <section class="mission-control" id="mission-planets" aria-label="Mission progress">
+      <div class="mission-status">
+        <p class="kicker">Current destination</p>
+        <h2 id="mission-level">Earth Launchpad</h2>
+        <p id="mission-summary">Start your quiz and tracker to fuel the rocket.</p>
+        <div class="mission-meter"><span id="mission-meter-fill"></span></div>
+        <p class="mission-score" id="mission-score">0% mission fuel</p>
+        <button class="button button--reset" id="reset-missions" type="button">Reset mission</button>
+      </div>
+      <div class="space-map">
+        <div class="rocket-lane">
+          <img class="mission-rocket" id="mission-rocket" src="https://commons.wikimedia.org/wiki/Special:FilePath/Cartoon%20space%20rocket.png" alt="Cartoon rocket from Wikimedia Commons">
+        </div>
+        <div class="planet-row">
+          <article class="planet-stop planet-stop--earth is-active"><span>Earth</span><img src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Earth%20seen%20from%20Apollo%2017.jpg?width=300" alt="Earth"></article>
+          <article class="planet-stop planet-stop--mercury"><span>Mercury</span><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercury%20in%20true%20color.jpg?width=300" alt="Mercury"></article>
+          <article class="planet-stop planet-stop--venus"><span>Venus</span><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Venus%20from%20Mariner%2010.jpg?width=300" alt="Venus"></article>
+          <article class="planet-stop planet-stop--mars"><span>Mars</span><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mars%20transparent.png?width=300" alt="Mars"></article>
+          <article class="planet-stop planet-stop--jupiter"><span>Jupiter</span><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jupiter%20%28transparent%29.png?width=300" alt="Jupiter"></article>
+          <article class="planet-stop planet-stop--saturn"><span>Saturn</span><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Saturn%20during%20Equinox.jpg?width=300" alt="Saturn"></article>
+          <article class="planet-stop planet-stop--uranus"><span>Uranus</span><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Uranus2.jpg?width=300" alt="Uranus"></article>
+          <article class="planet-stop planet-stop--neptune"><span>Neptune</span><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Transparent%20Neptune.png?width=300" alt="Neptune"></article>
+          <article class="planet-stop planet-stop--pluto"><span>Pluto</span><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pluto%20in%20True%20Color%20-%20High-Res.jpg?width=300" alt="Pluto"></article>
+        </div>
+      </div>
+    </section>
+    <div class="actions">
+      <a class="button button--secondary" href="mission-logo.html">Logo</a>
+      <a class="button button--primary" href="mission-recommendations.html">Recommendations</a>
+    </div>
+  </main>
+  <footer class="footer"><p>Before you buy it, question it.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">Balanced food plate</title>
+  <desc id="desc">A plate divided into vegetables and fruit, whole grains, and protein foods with a water cup.</desc>
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="600" fill="#07111f"/>
+  <circle cx="300" cy="285" r="232" fill="#eef8ff" opacity=".95" filter="url(#glow)"/>
+  <circle cx="300" cy="285" r="205" fill="#07111f"/>
+  <path d="M300 80a205 205 0 0 1 0 410a205 205 0 0 1 0-410z" fill="#66ff9a"/>
+  <path d="M300 80a205 205 0 0 1 177 308L300 285z" fill="#ffb14a"/>
+  <path d="M300 285l177 103A205 205 0 0 1 300 490z" fill="#38e8ff"/>
+  <path d="M300 80v410" stroke="#07111f" stroke-width="12"/>
+  <path d="M300 285l177 103" stroke="#07111f" stroke-width="12"/>
+  <circle cx="300" cy="285" r="205" fill="none" stroke="#eef8ff" stroke-width="10"/>
+  <text x="180" y="250" fill="#04101c" font-family="Arial, sans-serif" font-weight="900" font-size="28" text-anchor="middle">Vegetables</text>
+  <text x="180" y="285" fill="#04101c" font-family="Arial, sans-serif" font-weight="900" font-size="28" text-anchor="middle">&amp; fruit</text>
+  <text x="396" y="244" fill="#04101c" font-family="Arial, sans-serif" font-weight="900" font-size="25" text-anchor="middle">Whole</text>
+  <text x="396" y="275" fill="#04101c" font-family="Arial, sans-serif" font-weight="900" font-size="25" text-anchor="middle">grains</text>
+  <text x="390" y="392" fill="#04101c" font-family="Arial, sans-serif" font-weight="900" font-size="24" text-anchor="middle">Protein</text>
+  <text x="390" y="421" fill="#04101c" font-family="Arial, sans-serif" font-weight="900" font-size="24" text-anchor="middle">foods</text>
+  <g transform="translate(438 430)">
+    <rect x="0" y="0" width="78" height="102" rx="18" fill="#38e8ff" opacity=".92" stroke="#eef8ff" stroke-width="7"/>
+    <path d="M12 36h54v50a14 14 0 0 1-14 14H26a14 14 0 0 1-14-14z" fill="#07111f" opacity=".24"/>
+    <text x="39" y="128" fill="#eef8ff" font-family="Arial, sans-serif" font-weight="900" font-size="22" text-anchor="middle">Water</text>
+  </g>
+</svg>
